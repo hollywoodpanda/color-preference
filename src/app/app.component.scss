@@ -1,0 +1,78 @@
+@use '@angular/material' as mat;
+
+$theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$cyan-palette,
+  )
+));
+
+.main {
+    background-color: mat.get-theme-color($theme, secondary, 50);
+}
+
+h1 {
+    color: #3A3A3A;
+}
+
+.marginilized-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.to-the-left {
+    align-self: flex-end;
+    margin: 0 5px 20px 0;
+}
+
+.marginilized-article {
+    
+    .statistics-main-box {
+
+        display: flex;
+        flex-direction: column;
+        border: 3px solid;
+        border-color: mat.get-theme-color($theme, primary, 50);
+        color: #3A3A3A;
+        padding: 10px;
+        margin: 5px;
+        height: 100px;
+        background-color: #A3A3A3;
+        border-radius: 30px;
+        color: #535353;
+        h5 {
+            text-align: center;
+        }
+
+        .statistics-items-box {
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+
+}
+
+.centered {
+    text-align: center;
+}
+
+.form-article {
+    border: 3px solid;
+    border-color: mat.get-theme-color($theme, primary, 50);
+    text-align: center; 
+    margin: 20px;
+    background-color: #A3A3A3;
+    border-radius: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    app-button {
+        margin: 0 20px 20px;
+    }
+
+}

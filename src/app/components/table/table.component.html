@@ -1,0 +1,21 @@
+<table mat-table [dataSource]="colorPreferences">
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{element.lastName}}, {{element.firstName}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef>Age</th>
+        <td mat-cell *matCellDef="let element">{{element.age}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="color">
+        <th mat-header-cell *matHeaderCellDef>Prefered Color</th>
+        <td mat-cell *matCellDef="let element"><div [style]="colorStyle(element.color)">{{element.color}}</div></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>

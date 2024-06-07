@@ -1,0 +1,30 @@
+// .mat-table {
+//     overflow-x: scroll;
+//     display: table;
+//     width: 100%;
+// }
+// .mat-cell,
+// .mat-header-cell {
+//     word-wrap: initial;
+//     display: table-cell;
+//     padding: 0px 4px 4px 4px;
+//     line-break: unset;
+//     width: auto; 
+//     white-space: nowrap;
+//     overflow: hidden;
+//     vertical-align: middle;
+// }
+// .mat-row,
+// .mat-header-row {
+//     display: table-row;
+// }
+
+// mat-cell:nth-child(1),
+// mat-header-cell:nth-child(1) {
+//     flex: 0 0 30%;
+// }
+
+// mat-cell:nth-child(3),
+// mat-header-cell:nth-child(3) {
+//     flex: 0 0 10%;
+// }

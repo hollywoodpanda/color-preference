@@ -1,0 +1,25 @@
+<mat-dialog-content>
+<form (ngSubmit)="submit()">
+    <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input type="text" matInput [formControl]="colorsGroup.controls.firstName" placeholder="Ex. John" />
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input type="text" matInput [formControl]="colorsGroup.controls.lastName" placeholder="Ex. Smith" />
+        <!-- @if (formControl.hasError) -->
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input type="number" matInput [formControl]="colorsGroup.controls.age" />
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prefered Color</mat-label>
+        <input type="color" matInput [formControl]="colorsGroup.controls.color" />
+    </mat-form-field>
+    <mat-dialog-actions>
+        <app-button mat-button type="submit" title="Submit" [disabled]="!colorsGroup.valid" />
+    </mat-dialog-actions>
+</form>
+</mat-dialog-content>
+    

@@ -1,0 +1,25 @@
+[
+  { "firstName": "George", "lastName": "Smith", "age": 67, "color": "#22BB55" },
+  {
+    "firstName": "Mary",
+    "lastName": "Gonzales",
+    "age": 22,
+    "color": "#DD22AA"
+  },
+  {
+    "firstName": "Abigail",
+    "lastName": "McCloud",
+    "age": 62,
+    "color": "#FFFFFF"
+  },
+  {
+    "firstName": "Jack",
+    "lastName": "Polack",
+    "age": 63,
+    "color": "#22BB55"
+  },
+  { "firstName": "John", "lastName": "Wick", "age": 47, "color": "#000000" },
+  { "firstName": "Theresa", "lastName": "May", "age": 43, "color": "#AA0000" },
+  { "firstName": "River", "lastName": "Andalos", "age": 41, "color": "#000000" },
+  { "firstName": "Bob", "lastName": "McBoaty", "age": 32, "color": "#0000FF" }
+]

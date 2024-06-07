@@ -1,0 +1,27 @@
+.button {
+    background: hsl(var(--hue), 98%, 80%);
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	color: #0ebac5;
+	font: 600 1.05rem/1 "Nunito", sans-serif;
+	letter-spacing: .05em;
+	overflow: hidden;
+	padding: 30px 50px 30px 50px;
+	min-height: 3.3em;
+	// text-transform: lowercase;
+    --hue: 163;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.button:hover {
+    color: #148a93;
+    box-shadow: 0 0 12px #0ebac5;
+}
+
+.button:active, .button:focus {
+    outline: 3px solid hsl(var(--hue), 98%, 80%);
+}

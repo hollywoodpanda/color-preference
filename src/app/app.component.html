@@ -1,0 +1,26 @@
+
+<main class="main">
+  <article class="centered">
+    <h1>Color Keeper</h1>
+  </article>
+  <article>
+    <app-table />
+  </article>
+  <article class="marginilized-article">
+    <section class="statistics-main-box">
+      <h5>Prefered Colors by Age Group</h5>
+      <section class="statistics-items-box">
+        <app-statistics title="0 - 12" [value]="stats0To12" />
+        <app-statistics title="13 - 18" [value]="stats13To18" />
+        <app-statistics title="19 - 30" [value]="stats19To30" />
+        <app-statistics title="31 - 50" [value]="stats31To50" />
+        <app-statistics title="51+" [value]="stats51Plus" />
+      </section>
+    </section>
+    <section class="to-the-left">
+      <app-button class="button" title="Add A New Color" (click)="onAddPreferedColorClick()" mat-button />
+    </section>
+  </article>
+</main>
+
+<router-outlet />
